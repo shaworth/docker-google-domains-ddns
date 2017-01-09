@@ -1,2 +1,2 @@
-#!/usr/bin/bash
-docker build --rm=true -t coppit/no-ip . 
+#!/bin/sh
+docker build --rm=true -t dragoncube/google-domains-ddns . 

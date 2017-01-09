@@ -1,14 +1,14 @@
 FROM phusion/baseimage:0.9.17
 
-MAINTAINER David Coppit <david@coppit.org>
+MAINTAINER Kirill Uvaev <me@dragoncube.net>
 
 VOLUME ["/config"]
 
 # Add dynamic dns script
-ADD noip.sh /root/noip/noip.sh
-RUN chmod +x /root/noip/noip.sh
+ADD google-domains-ddns.sh /root/google-domains-ddns/google-domains-ddns.sh
+RUN chmod +x /root/google-domains-ddns/google-domains-ddns.sh
 
 # Create template config file
-ADD noip.conf /root/noip/noip.conf
+ADD google-domains-ddns.conf /root/google-domains-ddns/google-domains-ddns.conf
 
-CMD /root/noip/noip.sh
+CMD /root/google-domains-ddns/google-domains-ddns.sh
