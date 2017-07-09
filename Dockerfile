@@ -1,6 +1,6 @@
-FROM phusion/baseimage:0.9.17
+FROM nathancatania/phusion-arm
 
-MAINTAINER Kirill Uvaev <me@dragoncube.net>
+LABEL maintainer="sean.staley@gmail.com"
 
 VOLUME ["/config"]
 
