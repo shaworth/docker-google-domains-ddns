@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build --rm=true -t dragoncube/google-domains-ddns . 
+docker build --rm=true -t shaworth/google-domains-ddns . 
